@@ -1,0 +1,20 @@
+{
+  "name": "gh-action-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox for testing Github action features",
+  "main": "index.js",
+  "scripts": {
+    "test": "mkdir test && touch test/action-test.test",
+    "build": "mkdir build && touch build/build.test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmancan/gh-action-sandbox.git"
+  },
+  "author": "Tanveer Karim <contact@tkarimdesign.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanmancan/gh-action-sandbox/issues"
+  },
+  "homepage": "https://github.com/tanmancan/gh-action-sandbox#readme"
+}
