@@ -28,8 +28,8 @@ jobs:
     - name: Deploy via SCP
       uses: tanmancan/deploy-action@master
       with:
-        user: 'My Test User'
-        host: 'My Test Host'
+        user: ${{ secrets.USER }}
+        host: ${{ secrets.HOST }}
         port: 99
         key: 'My Test Key'
         local_path: 'My Test Local Path'
