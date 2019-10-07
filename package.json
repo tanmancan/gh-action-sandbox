@@ -4,7 +4,7 @@
   "description": "Sandbox for testing Github action features",
   "main": "index.js",
   "scripts": {
-    "test": "mkdir test && touch test/action-test.test",
+    "test": "ls -la",
     "build": "mkdir build && touch build/build.test"
   },
   "repository": {

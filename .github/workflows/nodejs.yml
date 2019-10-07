@@ -17,8 +17,20 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm build
+
+        - name: npm build
       run: |
         npm run build
+        npm run test
       env:
         CI: true
+
+    - name: Deploy via SCP
+      uses: tanmancan/deploy-action@master
+      with:
+        user: 'My Test User'
+        host: 'My Test Host'
+        port: 99
+        key: 'My Test Key'
+        local_path: 'My Test Local Path'
+        remote_path: 'My Test Remote Path'
