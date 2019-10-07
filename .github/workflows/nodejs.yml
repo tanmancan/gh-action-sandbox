@@ -31,6 +31,6 @@ jobs:
         user: ${{ secrets.USER }}
         host: ${{ secrets.HOST }}
         port: 99
-        key: 'MY KEY ASDF123'
+        key: ${{ secrets.KEY }}
         local_path: 'My Test Local Path'
         remote_path: 'My Test Remote Path'
